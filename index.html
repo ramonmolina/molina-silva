@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>erre_ka</title>
+    <meta name="title" content="erre_ka">
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <!-- Metadatos Genéricos -->
+    <meta name="description" content="Portafolio Colaborativo">
+    <meta name="image" content="https://ibb.co/wySL1xz">
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="name" content="erre_ka">
+    <meta itemprop="description" content="Portafolip Colaborativo">
+    <meta itemprop="image" content="https://ibb.co/wySL1xz">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="erre_ka">
+    <meta name="twitter:description" content="Portafolio Colaborativo">
+    <meta name="twitter:image" content="https://ibb.co/wySL1xz">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="erre_ka">
+    <meta name="og:description" content="Portafolio Colaborativo">
+    <meta name="og:image" content="https://ibb.co/wySL1xz">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1>erre_ka</h1>
+            <h2>colaboraciones</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+
+        <h3>_Quien</h3>
+        <div id="somos">
+
+            <div class="dupla primera">
+                <h4>Ramón Molina</h4>
+                <h5>Esta página hace ver como que me doy mucho color, pero en verdad no.</h5>
+                <p>Estudiante de diseño integral UC. Enfocado en la experimentación material.</p>
+                <address><a href="mailto:rumolina3@uc.cl">rumolina@uc.cl</a></address>
+            </div>
+
+            <div class="dupla segunda">
+                <h4>Karla Silva</h4>
+                <h5>Filo, yo si me doy color.</h5>
+                <p>Estudiante de diseño integral UC. Enfocada en comunicación visual. </p>
+                <address><a href="mailto:cdsilva@uc.cl">cdsilva@uc.cl</a></address>
+            </div>
+
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>_Colaboraciones</h3>
+
+        <div id="portafolio">
+
+            <!--acá se colocan y organizan las cosas con programación-->
+
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer>
+            <p>Portafolio Colaborativo | Diseño Integral | Santiago, Chile</p>
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
